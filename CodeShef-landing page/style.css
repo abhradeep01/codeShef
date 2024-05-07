@@ -247,13 +247,15 @@ main{
 }
 footer{
     width:90vw;
-    height:25vh;
+    height:30vh;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    gap:1rem;
     .card{
-        width:30%;
+        width:12.5rem;
         display: flex;
         flex-direction: column;
         gap:0.5rem;
@@ -379,5 +381,13 @@ footer{
         .right > input{
             width:70vw;
         }
+    }
+}
+@media (max-width:480px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 }
